@@ -1,341 +1,339 @@
 <html>
+    <head>
+        <title>Layout</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+        <!-- <link rel="stylesheet" href="./css/semantic.min.css">
+            <script src="./js/jquery.min.js"></script>
+            <script src="./js/semantic.min.js"></script> -->
+        <style type="text/css">
+            body {
+                background-color: #F8F8F8;
+            }
 
-<head>
-    <title>Layout</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
-    <!-- <link rel="stylesheet" href="./css/semantic.min.css">
-        <script src="./js/jquery.min.js"></script>
-        <script src="./js/semantic.min.js"></script> -->
-    <style type="text/css">
-        body {
-            background-color: #F8F8F8;
-        }
+            .ui.container.grid>.column>.main {
+                padding: 2em;
+                height: 1000px;
+                background-color: white;
+            }
 
-        .ui.container.grid>.column>.main {
-            padding: 2em;
-            height: 1000px;
-            background-color: white;
-        }
+            .ui.grid>.submenu.row {
+                padding: 0;
+            }
 
-        .ui.grid>.submenu.row {
-            padding: 0;
-        }
+            .ui.grid>.submenu.row .menu>.circular.item {
+                border-radius: 10em;
+            }
 
-        .ui.grid>.submenu.row .menu>.circular.item {
-            border-radius: 10em;
-        }
+            .ui.compact.styled.accordion>.title,
+            .ui.compact.styled.accordion .accordion>.title {
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: .5em;
+                padding-bottom: .5em;
+            }
 
-        .ui.compact.styled.accordion>.title,
-        .ui.compact.styled.accordion .accordion>.title {
-            padding-left: 0;
-            padding-right: 0;
-            padding-top: .5em;
-            padding-bottom: .5em;
-        }
+            .ui.compact.styled.accordion>.content,
+            .ui.compact.styled.accordion .accordion>.content {
+                padding-right: 0;
+                padding-top: 0;
+                padding-bottom: .5em;
+            }
 
-        .ui.compact.styled.accordion>.content,
-        .ui.compact.styled.accordion .accordion>.content {
-            padding-right: 0;
-            padding-top: 0;
-            padding-bottom: .5em;
-        }
+            .ui.compact.styled.accordion .accordion {
+                margin-top: 0;
+            }
 
-        .ui.compact.styled.accordion .accordion {
-            margin-top: 0;
-        }
+            .ui.borderless.styled.accordion,
+            .ui.borderless.styled.accordion .accordion {
+                box-shadow: none;
+            }
 
-        .ui.borderless.styled.accordion,
-        .ui.borderless.styled.accordion .accordion {
-            box-shadow: none;
-        }
+            .ui.progress.compact {
+                margin-top: .5em;
+                margin-bottom: 0;
+            }
 
-        .ui.progress.compact {
-            margin-top: .5em;
-            margin-bottom: 0;
-        }
+            .grid>.column>.input {
+                width: 100%;
+            }
 
-        .grid>.column>.input {
-            width: 100%;
-        }
+        </style>
+    </head>
 
-    </style>
-</head>
-
-<body>
-    <div class="ui center aligned padded grid">
-        <div class="row">
-            <div class="left aligned two wide column">
-                <img class="ui mini image" src="./img/logo.png">
-            </div>
-            <div class="twelve wide column">
-                <div class="ui buttons">
-                    <button class="ui basic button">
-                        <i class="icon home"></i>
-                        Budget
-                    </button>
-                    <button class="ui basic button">
-                        <i class="icon building"></i>
-                        Accounts
-                    </button>
-                    <button class="ui basic button">
-                        <i class="icon chart pie"></i>
-                        Reports
-                    </button>
+    <body>
+        <div class="ui center aligned padded grid">
+            <div class="row">
+                <div class="left aligned two wide column">
+                    <img class="ui mini image" src="./img/logo.png">
+                </div>
+                <div class="twelve wide column">
+                    <div class="ui buttons">
+                        <button class="ui basic button">
+                            <i class="icon home"></i>
+                            Budget
+                        </button>
+                        <button class="ui basic button">
+                            <i class="icon building"></i>
+                            Accounts
+                        </button>
+                        <button class="ui basic button">
+                            <i class="icon chart pie"></i>
+                            Reports
+                        </button>
+                    </div>
+                </div>
+                <div class="right aligned two wide column">
+                    <div class="ui dropdown">
+                        <img class="ui mini avatar image" src="./img/matthew.png">
+                        <div class="menu">
+                            <div class="item">
+                                <i class="icon wrench"></i>
+                                Settings
+                            </div>
+                            <div class="item">
+                                <i class="icon logout"></i>
+                                Logout
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="right aligned two wide column">
-                <div class="ui dropdown">
-                    <img class="ui mini avatar image" src="./img/matthew.png">
-                    <div class="menu">
-                        <div class="item">
-                            <i class="icon wrench"></i>
-                            Settings
+            <div class="submenu row">
+                <div class="column">
+                    <div class="ui secondary borderless compact menu">
+                        <a class="circular item">
+                            <i class="icon plus"></i>
+                            Add Transaction
+                        </a>
+                        <a class="circular item">
+                            <i class="icon search"></i>
+                            Search Transactions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui centered grid container">
+            <div class="thirteen wide column">
+                <div class="main">
+                    <h2 class="ui dividing header">Aug 2018</h2>
+                    <div class="ui fluid styled borderless compact accordion">
+                        <div class="title active">
+                            <div class="ui two column grid">
+                                <div class="left aligned column trigger">
+                                    <i class="icon dropdown"></i>
+                                    Personal
+                                </div>
+                                <div class="right aligned column">$10.00</div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <i class="icon logout"></i>
-                            Logout
+                        <div class="content active">
+                            <div class="accordion">
+                                <div class="title">
+                                    <div class="ui grid">
+                                        <div class="left aligned six wide column trigger">
+                                            <i class="icon dropdown"></i>
+                                            Food
+                                        </div>
+                                        <div class="two wide column">
+                                            <div class="ui transparent input">
+                                                <input type="number" placeholder="Amount" value="100">
+                                            </div>
+                                        </div>
+                                        <div class="six wide column">
+                                            <div class="ui tiny compact progress" data-value="10" data-total="20">
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned two wide column">
+                                            <div class="column">
+                                                $5.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="ui one column grid">
+                                        <div class="column">
+                                            <table class="ui selectable striped compact small very basic celled table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>19 Aug</td>
+                                                        <td>Unimart</td>
+                                                        <td class="right aligned">$3.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20 Aug</td>
+                                                        <td>Salam's Kitchen</td>
+                                                        <td class="right aligned">$2.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="title">
+                                    <div class="ui grid">
+                                        <div class="left aligned six wide column trigger">
+                                            <i class="icon dropdown"></i>
+                                            Entertainment
+                                        </div>
+                                        <div class="two wide column">
+                                            <div class="ui transparent input">
+                                                <input type="number" placeholder="Amount" value="100">
+                                            </div>
+                                        </div>
+                                        <div class="six wide column">
+                                            <div class="ui tiny compact progress" data-value="10" data-total="20">
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned two wide column">
+                                            <div class="column">
+                                                $5.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="ui one column grid">
+                                        <div class="column">
+                                            <table class="ui selectable striped compact small very basic celled table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>19 Aug</td>
+                                                        <td>Unimart</td>
+                                                        <td class="right aligned">$3.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20 Aug</td>
+                                                        <td>Salam's Kitchen</td>
+                                                        <td class="right aligned">$2.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title active">
+                            <div class="ui two column grid">
+                                <div class="left aligned column trigger">
+                                    <i class="icon dropdown"></i>
+                                    Family
+                                </div>
+                                <div class="right aligned column">$10.00</div>
+                            </div>
+                        </div>
+                        <div class="content active">
+                            <div class="accordion">
+                                <div class="title">
+                                    <div class="ui grid">
+                                        <div class="left aligned six wide column trigger">
+                                            <i class="icon dropdown"></i>
+                                            Food
+                                        </div>
+                                        <div class="two wide column">
+                                            <div class="ui transparent input">
+                                                <input type="number" placeholder="Amount" value="100">
+                                            </div>
+                                        </div>
+                                        <div class="six wide column">
+                                            <div class="ui tiny compact progress" data-value="10" data-total="20">
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned two wide column">
+                                            <div class="column">
+                                                $5.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="ui one column grid">
+                                        <div class="column">
+                                            <table class="ui selectable striped compact small very basic celled table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>19 Aug</td>
+                                                        <td>Unimart</td>
+                                                        <td class="right aligned">$3.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20 Aug</td>
+                                                        <td>Salam's Kitchen</td>
+                                                        <td class="right aligned">$2.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="title">
+                                    <div class="ui grid">
+                                        <div class="left aligned six wide column trigger">
+                                            <i class="icon dropdown"></i>
+                                            Entertainment
+                                        </div>
+                                        <div class="two wide column">
+                                            <div class="ui transparent input">
+                                                <input type="number" placeholder="Amount" value="100">
+                                            </div>
+                                        </div>
+                                        <div class="six wide column">
+                                            <div class="ui tiny compact progress" data-value="10" data-total="20">
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned two wide column">
+                                            <div class="column">
+                                                $5.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="ui one column grid">
+                                        <div class="column">
+                                            <table class="ui selectable striped compact small very basic celled table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>19 Aug</td>
+                                                        <td>Unimart</td>
+                                                        <td class="right aligned">$3.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20 Aug</td>
+                                                        <td>Salam's Kitchen</td>
+                                                        <td class="right aligned">$2.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="submenu row">
-            <div class="column">
-                <div class="ui secondary borderless compact menu">
-                    <a class="circular item">
-                        <i class="icon plus"></i>
-                        Add Transaction
-                    </a>
-                    <a class="circular item">
-                        <i class="icon search"></i>
-                        Search Transactions
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="ui centered grid container">
-        <div class="thirteen wide column">
-            <div class="main">
-                <h2 class="ui dividing header">Aug 2018</h2>
-                <div class="ui fluid styled borderless compact accordion">
-                    <div class="title active">
-                        <div class="ui two column grid">
-                            <div class="left aligned column trigger">
-                                <i class="icon dropdown"></i>
-                                Personal
-                            </div>
-                            <div class="right aligned column">$10.00</div>
-                        </div>
-                    </div>
-                    <div class="content active">
-                        <div class="accordion">
-                            <div class="title">
-                                <div class="ui grid">
-                                    <div class="left aligned six wide column trigger">
-                                        <i class="icon dropdown"></i>
-                                        Food
-                                    </div>
-                                    <div class="two wide column">
-                                        <div class="ui transparent input">
-                                            <input type="number" placeholder="Amount" value="100">
-                                        </div>
-                                    </div>
-                                    <div class="six wide column">
-                                        <div class="ui tiny compact progress" data-value="10" data-total="20">
-                                            <div class="bar"></div>
-                                        </div>
-                                    </div>
-                                    <div class="right aligned two wide column">
-                                        <div class="column">
-                                            $5.00
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="ui one column grid">
-                                    <div class="column">
-                                        <table class="ui selectable striped compact small very basic celled table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>19 Aug</td>
-                                                    <td>Unimart</td>
-                                                    <td class="right aligned">$3.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20 Aug</td>
-                                                    <td>Salam's Kitchen</td>
-                                                    <td class="right aligned">$2.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <div class="title">
-                                <div class="ui grid">
-                                    <div class="left aligned six wide column trigger">
-                                        <i class="icon dropdown"></i>
-                                        Entertainment
-                                    </div>
-                                    <div class="two wide column">
-                                        <div class="ui transparent input">
-                                            <input type="number" placeholder="Amount" value="100">
-                                        </div>
-                                    </div>
-                                    <div class="six wide column">
-                                        <div class="ui tiny compact progress" data-value="10" data-total="20">
-                                            <div class="bar"></div>
-                                        </div>
-                                    </div>
-                                    <div class="right aligned two wide column">
-                                        <div class="column">
-                                            $5.00
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="ui one column grid">
-                                    <div class="column">
-                                        <table class="ui selectable striped compact small very basic celled table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>19 Aug</td>
-                                                    <td>Unimart</td>
-                                                    <td class="right aligned">$3.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20 Aug</td>
-                                                    <td>Salam's Kitchen</td>
-                                                    <td class="right aligned">$2.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="title active">
-                        <div class="ui two column grid">
-                            <div class="left aligned column trigger">
-                                <i class="icon dropdown"></i>
-                                Family
-                            </div>
-                            <div class="right aligned column">$10.00</div>
-                        </div>
-                    </div>
-                    <div class="content active">
-                        <div class="accordion">
-                            <div class="title">
-                                <div class="ui grid">
-                                    <div class="left aligned six wide column trigger">
-                                        <i class="icon dropdown"></i>
-                                        Food
-                                    </div>
-                                    <div class="two wide column">
-                                        <div class="ui transparent input">
-                                            <input type="number" placeholder="Amount" value="100">
-                                        </div>
-                                    </div>
-                                    <div class="six wide column">
-                                        <div class="ui tiny compact progress" data-value="10" data-total="20">
-                                            <div class="bar"></div>
-                                        </div>
-                                    </div>
-                                    <div class="right aligned two wide column">
-                                        <div class="column">
-                                            $5.00
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="ui one column grid">
-                                    <div class="column">
-                                        <table class="ui selectable striped compact small very basic celled table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>19 Aug</td>
-                                                    <td>Unimart</td>
-                                                    <td class="right aligned">$3.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20 Aug</td>
-                                                    <td>Salam's Kitchen</td>
-                                                    <td class="right aligned">$2.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <div class="title">
-                                <div class="ui grid">
-                                    <div class="left aligned six wide column trigger">
-                                        <i class="icon dropdown"></i>
-                                        Entertainment
-                                    </div>
-                                    <div class="two wide column">
-                                        <div class="ui transparent input">
-                                            <input type="number" placeholder="Amount" value="100">
-                                        </div>
-                                    </div>
-                                    <div class="six wide column">
-                                        <div class="ui tiny compact progress" data-value="10" data-total="20">
-                                            <div class="bar"></div>
-                                        </div>
-                                    </div>
-                                    <div class="right aligned two wide column">
-                                        <div class="column">
-                                            $5.00
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="ui one column grid">
-                                    <div class="column">
-                                        <table class="ui selectable striped compact small very basic celled table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>19 Aug</td>
-                                                    <td>Unimart</td>
-                                                    <td class="right aligned">$3.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20 Aug</td>
-                                                    <td>Salam's Kitchen</td>
-                                                    <td class="right aligned">$2.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        $('.ui.dropdown').dropdown();
-        $('.ui.accordion').accordion({
-            exclusive: false,
-            selector: {
-                trigger: '.trigger',
-            },
-        });
-    </script>
-</body>
-
+        <script>
+            $('.ui.dropdown').dropdown();
+            $('.ui.accordion').accordion({
+                exclusive: false,
+                selector: {
+                    trigger: '.trigger',
+                },
+            });
+        </script>
+    </body>
 </html>
